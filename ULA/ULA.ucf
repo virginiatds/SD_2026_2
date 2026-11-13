@@ -1,0 +1,40 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "switches[0]" LOC = V8;
+NET "switches[1]" LOC = U10;
+NET "switches[2]" LOC = U8;
+NET "switches[3]" LOC = T9;
+NET "leds_out[0]" LOC = R20;
+NET "leds_out[1]" LOC = T19;
+NET "leds_out[2]" LOC = U20;
+NET "leds_out[3]" LOC = U19;
+NET "leds_out[4]" LOC = V19;
+NET "leds_out[5]" LOC = V20;
+NET "leds_out[6]" LOC = Y22;
+NET "leds_out[7]" LOC = W21;
+
+# PlanAhead Generated IO constraints 
+
+NET "leds_out[7]" IOSTANDARD = LVCMOS33;
+NET "leds_out[6]" IOSTANDARD = LVCMOS33;
+NET "leds_out[5]" IOSTANDARD = LVCMOS33;
+NET "leds_out[4]" IOSTANDARD = LVCMOS33;
+NET "leds_out[3]" IOSTANDARD = LVCMOS33;
+NET "leds_out[2]" IOSTANDARD = LVCMOS33;
+NET "leds_out[1]" IOSTANDARD = LVCMOS33;
+NET "leds_out[0]" IOSTANDARD = LVCMOS33;
+NET "switches[3]" IOSTANDARD = LVCMOS33;
+NET "switches[2]" IOSTANDARD = LVCMOS33;
+NET "switches[1]" IOSTANDARD = LVCMOS33;
+NET "switches[0]" IOSTANDARD = LVCMOS33;
+NET "button" IOSTANDARD = LVCMOS33;
+NET "button" PULLDOWN;
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "button" LOC = T15;
+NET "clk" LOC = E12;
+NET "clk" TNM_NET = "clk_grp";
+TIMESPEC "TS_clk" = PERIOD "clk_grp" 20 ns HIGH 40%;
